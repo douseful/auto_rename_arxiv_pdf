@@ -29,6 +29,7 @@ def rename_arxiv_pdf(pdf_path: str):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("pdf_path", help="The path to the PDF file.")
+    # parser.add_argument("save_path", default="./",help="The path to save the renamed PDF file.")
     args = parser.parse_args()
 
     rename_arxiv_pdf(args.pdf_path)
